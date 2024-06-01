@@ -1,0 +1,12 @@
+[
+  {
+    "email": "doctor",
+    "password": "doctor",
+    "role": "doctor"
+  },
+  {
+    "email": "patient",
+    "password": "patient",
+    "role": "patient"
+  }
+]

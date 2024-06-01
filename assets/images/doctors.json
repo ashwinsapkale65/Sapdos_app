@@ -1,0 +1,38 @@
+[
+  {
+    "image": "assets/images/7.png",
+    "title": "John Doe",
+    "subtitle": "Software Engineer",
+    "rating": 3
+  },
+  {
+    "image": "assets/images/8.png",
+    "title": "Julian Smith",
+    "subtitle": "Product Manager",
+    "rating": 3
+  },
+  {
+    "image": "assets/images/9.png",
+    "title": "Mike Johnson",
+    "subtitle": "UX Designer",
+    "rating": 4.8
+  },
+  {
+    "image": "assets/images/3.png",
+    "title": "Emily Davis",
+    "subtitle": "Data Scientist",
+    "rating": 4.7
+  },
+  {
+    "image": "assets/images/5.png",
+    "title": "David Wilson",
+    "subtitle": "DevOps Engineer",
+    "rating": 4.3
+  },
+  {
+    "image": "assets/images/6.png",
+    "title": "Emma Brown",
+    "subtitle": "Marketing Specialist",
+    "rating": 4.6
+  }
+]
