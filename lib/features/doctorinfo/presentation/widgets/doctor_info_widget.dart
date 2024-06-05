@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sapdos_app/features/doctorinfo/presentation/widgets/timing_slots_grid.dart';
 import 'package:sapdos_app/presentation/atoms/info_image.dart';
 import 'package:sapdos_app/presentation/theme/color_schemes.dart';
 

@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:sapdos_app/core/constants/doctors.dart';
 import 'package:sapdos_app/features/doctorinfo/presentation/pages/doctor_info_screen.dart';
+import 'package:sapdos_app/features/patientdashboard/domain/entities/user_doctor_entity.dart';
 import 'package:sapdos_app/presentation/theme/color_schemes.dart';
 
 class ProfileCardsGrid extends StatelessWidget {
+  final List<DoctorsList> userDoctors;
+
+  ProfileCardsGrid({required this.userDoctors});
+
   @override
   Widget build(BuildContext context) {
+    print(userDoctors);
     return GridView.builder(
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
@@ -13,13 +18,14 @@ class ProfileCardsGrid extends StatelessWidget {
         crossAxisSpacing: 10.0,
         childAspectRatio: 3,
       ),
-      itemCount: profiles.length,
+      itemCount: userDoctors.length,
       itemBuilder: (context, index) {
         return ProfileCard(
-          image: profiles[index]['image'],
-          title: profiles[index]['title'],
-          subtitle: profiles[index]['subtitle'],
-          rating: profiles[index]['rating'],
+          image: userDoctors[index].doctorImage!,
+          title: userDoctors[index]!.doctorName!,
+          subtitle: userDoctors[index].specialization!,
+          // Assuming rating is not fetched from bloc, provide a default value
+          rating: 0,
         );
       },
     );
@@ -66,7 +72,7 @@ class ProfileCard extends StatelessWidget {
           child: Row(
             children: [
               CircleAvatar(
-                backgroundImage: AssetImage(image),
+                backgroundImage: NetworkImage(image),
                 radius: 50,
               ),
               SizedBox(width: 20),

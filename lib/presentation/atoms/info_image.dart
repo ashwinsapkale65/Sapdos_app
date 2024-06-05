@@ -20,8 +20,7 @@ class CustomImageContainer extends StatelessWidget {
       height: height,
       decoration: BoxDecoration(
         shape: BoxShape.rectangle,
-        color: AppColors
-            .cardcolor, 
+        color: AppColors.cardcolor,
         borderRadius: BorderRadius.circular(18),
         border: Border.all(
           color: AppColors.cardcolor,
@@ -30,10 +29,10 @@ class CustomImageContainer extends StatelessWidget {
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(16),
-        child: Image.asset(
+        child: Image.network(
           imagePath,
           fit: BoxFit.cover,
-        ),
+        ),  
       ),
     );
   }

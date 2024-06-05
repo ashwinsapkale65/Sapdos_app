@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sapdos_app/features/bookappointment/presentation/bloc/bloc/payment_bloc.dart';
 
-import 'package:sapdos_app/presentation/atoms/custom_auth_button.dart';
 import 'package:sapdos_app/presentation/theme/color_schemes.dart';
 import 'package:sapdos_app/presentation/theme/font_schemes.dart';
 

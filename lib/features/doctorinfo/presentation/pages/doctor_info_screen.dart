@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:sapdos_app/features/bookappointment/presentation/pages/book_appointment_page.dart';
 import 'package:sapdos_app/features/doctorinfo/presentation/widgets/doctor_info_widget.dart';
 import 'package:sapdos_app/features/doctorinfo/presentation/widgets/timing_slots_grid.dart';
-import 'package:sapdos_app/features/patientdashboard/presentation/pages/patient_dashboard_page.dart';
 import 'package:sapdos_app/presentation/atoms/custom_auth_button.dart';
 import 'package:sapdos_app/presentation/theme/color_schemes.dart';
 

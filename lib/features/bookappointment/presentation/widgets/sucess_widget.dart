@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:sapdos_app/features/patientdashboard/presentation/pages/patient_dashboard_page.dart';
 import 'package:sapdos_app/presentation/theme/color_schemes.dart';
@@ -19,7 +17,7 @@ class SucessWidget extends StatelessWidget {
             color: AppColors.primary,
           ),
           width: MediaQuery.of(context).size.width * 0.20,
-          height: MediaQuery.of(context).size.height * 0.30,
+          height: MediaQuery.of(context).size.height * 0.35,
           padding: EdgeInsets.all(20),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

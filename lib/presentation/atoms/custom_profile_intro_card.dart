@@ -46,9 +46,7 @@ class CustomIntroCard extends StatelessWidget {
           ),
           CircleAvatar(
             radius: 80,
-            backgroundImage: AssetImage(
-              imagePath,
-            ),
+            backgroundImage: NetworkImage(imagePath),
           ),
         ],
       ),
