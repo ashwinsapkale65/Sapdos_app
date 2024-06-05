@@ -6,11 +6,16 @@ import 'package:sapdos_app/presentation/atoms/custom_auth_button.dart';
 import 'package:sapdos_app/presentation/theme/color_schemes.dart';
 
 class DoctorInfoPage extends StatefulWidget {
-   final String image;
+  final String image;
   final String name;
   final String specialization;
   final double rating;
-  const DoctorInfoPage({super.key, required this.image, required this.name, required this.specialization, required this.rating});
+  const DoctorInfoPage(
+      {super.key,
+      required this.image,
+      required this.name,
+      required this.specialization,
+      required this.rating});
 
   @override
   State<DoctorInfoPage> createState() => _DoctorInfoPageState();
@@ -19,6 +24,7 @@ class DoctorInfoPage extends StatefulWidget {
 class _DoctorInfoPageState extends State<DoctorInfoPage> {
   @override
   Widget build(BuildContext context) {
+    print(widget.specialization);
     return Scaffold(
       body: Center(
         child: Container(

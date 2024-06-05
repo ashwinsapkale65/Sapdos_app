@@ -14,7 +14,8 @@ class Doctorinfowidget extends StatelessWidget {
     required this.imagePath,
     required this.name,
     required this.specilization,
-    required this.issueDescription, required this.rating,
+    required this.issueDescription,
+    required this.rating,
   }) : super(key: key);
 
   @override
@@ -74,7 +75,7 @@ class Doctorinfowidget extends StatelessWidget {
                   ),
                   SizedBox(width: 8),
                   Text(
-                    'Dentist',
+                    specilization,
                     style: TextStyle(
                       fontSize: 20,
                       fontFamily: 'Sans',
@@ -123,10 +124,7 @@ class Doctorinfowidget extends StatelessWidget {
                   style: TextStyle(fontSize: 16),
                   overflow: TextOverflow.clip,
                 ),
-                
               ),
-             
-              
             ],
           ),
         ],

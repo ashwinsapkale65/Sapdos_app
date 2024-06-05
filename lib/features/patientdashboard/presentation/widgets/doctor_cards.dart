@@ -22,7 +22,7 @@ class ProfileCardsGrid extends StatelessWidget {
       itemBuilder: (context, index) {
         return ProfileCard(
           image: userDoctors[index].doctorImage!,
-          title: userDoctors[index]!.doctorName!,
+          title: userDoctors[index].doctorName!,
           subtitle: userDoctors[index].specialization!,
           // Assuming rating is not fetched from bloc, provide a default value
           rating: 0,
