@@ -7,15 +7,17 @@ class CustomTextFormField extends StatefulWidget {
   final IconData? trailingIcon;
   final bool isPasswordField;
   final String hintText;
-   TextEditingController? tcontroller;
+  final TextEditingController? tcontroller;
+  final ValueChanged<String>? onChanged;
 
-   CustomTextFormField({
+  CustomTextFormField({
     Key? key,
-     this.prefixIcon,
+    this.prefixIcon,
     this.trailingIcon,
     this.isPasswordField = false,
     required this.hintText,
-    this.tcontroller
+    this.onChanged,
+    this.tcontroller,
   }) : super(key: key);
 
   @override
@@ -29,6 +31,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
   Widget build(BuildContext context) {
     return TextFormField(
       controller: widget.tcontroller,
+      onChanged: widget.onChanged,
       obscureText: widget.isPasswordField ? _obscureText : false,
       decoration: InputDecoration(
         hintText: widget.hintText,
